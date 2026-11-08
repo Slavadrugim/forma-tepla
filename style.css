@@ -12,4 +12,10 @@ header{
   background-color: #efebe9;
   border-radius:10px;
 }
-  
+.catalog p{
+  text-align:center;
+  font-size:18px;
+  color:#795548;
+  margin-top:50px;
+  font-style:italic;
+}
