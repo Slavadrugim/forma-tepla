@@ -13,7 +13,7 @@ header{
   text-align:center;
   margin-bottom:40px;
   padding:20px;
-  background-color: #efebe9;
+  background-color:rgba(255, 255, 255, 0.7);
   border-radius:10px;
 }
 .catalog p{
