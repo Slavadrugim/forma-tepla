@@ -10,11 +10,9 @@ body{
   background-attachment:fixed;
 }
 header{
-  text-align:center;
-  margin-bottom:40px;
-  padding:20px;
-  background-color:#fdf5f0;
-  border-radius:10px;
+  display:flex;
+  justifi-content:center;
+  margin-bottom;40px;
 }
 .catalog p{
   text-align:center;
