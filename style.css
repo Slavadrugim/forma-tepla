@@ -14,9 +14,10 @@ header {
   text-align: center;
   margin-bottom: 40px;
   padding: 30px 20px;
-  background-color: rgba(253, 245, 240, 0.9); /* Исправлены запятые */
+  background-color: rgba(212, 175, 55, 0.4); /* Исправлены запятые */
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Исправлена прозрачность */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border:1px solid rgba(212, 175, 55, 0.6);/* Исправлена прозрачность */
 }
 
 header h1 {
