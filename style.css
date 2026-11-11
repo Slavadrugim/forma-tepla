@@ -1,39 +1,50 @@
-body{
-  background-color:#faf6f0;
-  color:#333333;
-  font-family:Arial, sans-serif;
-  margin:0;
-  padding:20px;
+body {
+  background-color: #faf6f0;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
   background-image: url('22.jpg');
-  background-size:cover;
-  background-position:center;
-  background-attachment:fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-header{
-  display:flex;
-  justify-content:center;
-  margin-bottom:40px;
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 20px;
+  background-color: rgba(253, 245, 240, 0.9); /* Исправлены запятые */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Исправлена прозрачность */
 }
-.catalog p{
-  text-align:center;
-  font-size:18px;
-  color:#795548;
-  margin-top:50px;
-  font-style:italic;
+
+header h1 {
+  font-family: 'Georgia', serif;
+  color: #5d4037;
+  font-size: 48px;
+  margin: 0 0 10px 0;
+  letter-spacing: 2px;
 }
-h2{
-  text-align:center;
-  color:#5d4037;
-  font-size:24px;
+
+header p {
+  font-family: 'Arial', sans-serif;
+  color: #795548;
+  font-size: 18px;
+  margin: 0;
+  font-style: italic;
 }
-.logo{
-  max-width:400px;
-  width:100%;
-  height:auto;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
-  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
-  
-  /* Добавляем легкую тень, чтобы картинка отделялась от фона */
-  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
+
+.catalog p {
+  text-align: center;
+  font-size: 18px;
+  color: #795548;
+  margin-top: 50px;
+  font-style: italic;
 }
-  
+
+h2 {
+  text-align: center;
+  color: #5d4037;
+  font-size: 24px;
+}
