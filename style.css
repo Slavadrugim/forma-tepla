@@ -30,5 +30,10 @@ h2{
   max-width:400px;
   width:100%;
   height:auto;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  
+  /* Добавляем легкую тень, чтобы картинка отделялась от фона */
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
 }
   
