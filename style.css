@@ -57,8 +57,13 @@ h2 {
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 300px;
+  max-width: 280px;
   margin: 0 auto;
+  width:100%;
+  min-height:350px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 .card h3 {
