@@ -146,3 +146,20 @@ footer {
   line-height: 1.6;
   margin: 0;
 }
+.vk-btn {
+  display: inline-block;
+  background-color: #0077FF; /* Синий цвет ВК */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 119, 255, 0.3);
+}
+
+.vk-btn:hover {
+  background-color: #005BCC;
+  transform: translateY(-2px);
+}
