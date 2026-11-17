@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 20px;
   background-image: url('22.jpg');
-  background-size: cover;
+  background-size: 70% auto;
+  background-repeat:no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
