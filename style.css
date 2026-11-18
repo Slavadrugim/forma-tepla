@@ -1,5 +1,5 @@
 body {
-  background-color:#e6bec3;
+  background-color: #e6bec3;
   color: #333333;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -41,88 +41,7 @@ h2 {
   font-size: 24px;
 }
 
-.catalog p {
-  text-align: center;
-  font-size: 18px;
-  color: #795548;
-  margin-top: 50px;
-  font-style: italic;
-}
-
-/* ВОТ ТУТ СТИЛИ ДЛЯ КАРТОЧКИ - ОТДЕЛЬНО, НЕ ВНУТРИ H2! */
-.card {
-  background-color:rgba(230, 190, 195, 0.5);
-  border:1px solid #e0c0c0;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 280px;
-  margin: 0 auto;
-  width:100%;
-  min-height:350px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-
-.card h3 {
-  margin-top: 0;
-  color: #5d4037;
-}
-
-.card .price {
-  font-weight: bold;
-  color: #795548;
-  font-size: 20px;
-}
-
-.card .desc {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.buy-btn {
-  display: inline-block;
-  background-color: #0088cc;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.buy-btn:hover {
-  background-color: #006699;
-}
-footer {
-  text-align: center;
-  margin-top: 50px;
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  margin-bottom:30px;
-  flex-wrap:wrap;
-}
-
-.tg-btn {
-  display: inline-block;
-  background-color: #0088cc; /* Цвет Telegram */
-  color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 10px rgba(0, 136, 204, 0.3); /* Легкая тень в цвет кнопки */
-}
-
-.tg-btn:hover {
-  background-color: #006699;
-  transform: translateY(-2px); /* Кнопка чуть подпрыгивает при наведении */
-}
+/* Блок О нас */
 .about {
   max-width: 600px;
   margin: 0 auto 40px auto;
@@ -146,37 +65,79 @@ footer {
   line-height: 1.6;
   margin: 0;
 }
-.vk-btn {
-  display: inline-block;
-  background-color: #0077FF; /* Синий цвет ВК */
-  color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
-  text-decoration: none;
+
+/* Сетка для карточек */
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+/* Сама карточка */
+.card {
+  background-color: rgba(230, 190, 195, 0.5);
+  border: 1px solid #e0c0c0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 280px;
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #5d4037;
+}
+
+.card .price {
   font-weight: bold;
-  font-size: 18px;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 10px rgba(0, 119, 255, 0.3);
+  color: #795548;
+  font-size: 20px;
 }
 
-.vk-btn:hover {
-  background-color: #005BCC;
-  transform: translateY(-2px);
+.card .desc {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
-/* Контейнер для кнопок (прижимаем в правый нижний угол) */
-.floating-buttons {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+
+/* Кнопка внутри карточки (пока синяя, потом можно перекрасить) */
+.buy-btn {
+  display: inline-block;
+  background-color: #0088cc;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #006699;
+}
+
+/* Подвал */
+footer {
+  text-align: center;
+  margin-top: 50px;
   display: flex;
-  flex-direction: column; /* Кнопки будут друг под другом */
-  gap: 15px;              /* Расстояние между кнопками */
-  z-index: 1000;          /* Чтобы кнопки были поверх всего */
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 80px; /* Отступ, чтобы плавающие кнопки не перекрывали */
+  flex-wrap: wrap;
 }
 
-/* Общие стили для стеклянной кнопки */
+/* --- СТЕКЛЯННЫЕ КНОПКИ --- */
 .glass-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -188,22 +149,30 @@ footer {
   color: #333;
   
   /* Эффект матового стекла */
-  background: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый */
-  backdrop-filter: blur(10px);          /* Размытие фона позади кнопки */
-  -webkit-backdrop-filter: blur(10px);  /* Для Safari */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   
-  /* Объем и стеклянный блик */
+  /* Объем и блик */
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(255, 255, 255, 0.5);
   
   transition: all 0.3s ease;
 }
 
-/* Эффект при наведении */
 .glass-btn:hover {
-  background: rgba(255, 255, 255, 0.6); /* Чуть плотнее */
-  transform: translateY(-3px);          /* Кнопка всплывает */
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), inset 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-/* Немного выделим кнопку Telegram (чтобы было понятно, куда писать) */
+/* Плавающие кнопки в углу */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
